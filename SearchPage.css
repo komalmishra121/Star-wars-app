@@ -1,0 +1,68 @@
+/* SearchPage.css */
+.search-page {
+  background: url('https://images.unsplash.com/photo-1518396972246-48e6c79e4680') no-repeat center center; /* Galaxy background */
+  background-size: cover; /* Cover the entire page with the background image */
+  min-height: 100vh; /* Ensure the background covers the entire viewport height */
+  color: black; /* White text color for better contrast */
+  font-family: 'Arial', sans-serif; /* Font style */
+  padding: 20px; /* Padding around the page */
+  box-sizing: border-box; /* Include padding in the total width and height */
+  background-color: grey;
+}
+
+input {
+  width: 100%; /* Full width for the search input */
+  max-width: 400px; /* Maximum width of the input */
+  padding: 10px; /* Padding inside the input field */
+  border-radius: 8px; /* Slightly rounded corners for the input field */ /* Black background for the input field */
+  color:black; /* White text color for the input field */
+  font-size: 1rem; /* Font size for the input text */
+  margin-bottom: 20px; /* Space between input and planet cards */
+}
+
+input::placeholder {
+  color: #888; /* Placeholder text color */
+}
+
+.planet-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap onto multiple lines */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center the cards horizontally */
+}
+
+.planet-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffd700; /* Yellow border */
+  background: black; /* Galaxy background */
+  background-size: cover; /* Cover the card with the background image */
+  color: white; /* White text color */
+  font-family: 'Arial', sans-serif; /* Font style */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly darker shadow effect */
+  transition: transform 0.2s ease-in-out; /* Animation on hover */
+  width: 200px; /* Fixed width for cards */
+  height: 200px; /* Fixed height for cards */
+  margin: 20px; /* Space around each card */
+  padding: 20px; /* Padding inside the cards */
+  text-align: center; /* Center align text */
+  border-radius: 15px; /* Curved corners */
+}
+
+.planet-card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card on hover */
+}
+
+.planet-card h3 {
+  margin: 0;
+  font-size: 1.5rem; /* Increased font size for planet name */
+}
+
+.planet-card p {
+  margin: 5px 0 0;
+  font-size: 1.2rem; /* Increased font size for population */
+}
+
+  

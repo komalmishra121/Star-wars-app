@@ -1,0 +1,33 @@
+/* PlanetCard.css */
+.planet-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #ffd700; /* Yellow border */
+  background-color: #000; /* Black background for cards */
+  color: #fff; /* White text color */
+  font-family: 'Arial', sans-serif; /* Font style */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly darker shadow effect */
+  transition: transform 0.2s ease-in-out; /* Animation on hover */
+  width: 200px; /* Increased width for larger cards */
+  height: 200px; /* Increased height for larger cards */
+  margin: 20px;
+  padding: 20px; /* Adjusted padding for larger cards */
+  text-align: center; /* Center align text */
+  border-radius: 15px; /* Curved corners */
+}
+
+.planet-card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card on hover */
+}
+
+.planet-card h3 {
+  margin: 0;
+  font-size: 1.5rem; /* Increased font size for planet name */
+}
+
+.planet-card p {
+  margin: 5px 0 0;
+  font-size: 1.2rem; /* Increased font size for population */
+}
